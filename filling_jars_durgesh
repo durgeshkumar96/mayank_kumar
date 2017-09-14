@@ -4,20 +4,21 @@
 #include <stdlib.h>
 
 int main() {
-    int i,n,m,a,b,k,sum=0,c;
+   long int n,m,a,b,k,sum=0,c;
+    int i;
     //printf("Enter the no.of JARS,and no. of operations\n");
-    scanf("%d%d",&n,&m);
+    scanf("%ld%ld",&n,&m);
     for(i=0;i<m;i++)
     {
       //  printf("enter the no. of indices to be filled in btw\n");
-        scanf("%d%d%d",&a,&b,&k);
+        scanf("%ld%ld%ld",&a,&b,&k);
         c=b-a+1;
         c=c*k;
         sum=sum+c;
         
     }
     sum=sum/n;
-    printf("%d",sum);
+    printf("%ld",sum);
    
     return 0;
 }
